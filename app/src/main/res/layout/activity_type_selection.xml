@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="408dp"
+        android:layout_width="match_parent"
         android:layout_height="606dp"
         android:background="@drawable/curve"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,7 +103,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/bus_no_bg" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -111,23 +111,27 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
         android:fontFamily="sans-serif-light"
         android:text="Select Your Type"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="58dp"
-        android:layout_height="61dp"
+        android:layout_width="115dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:layout_constraintVertical_bias="0.015"
+        app:srcCompat="@drawable/no_background" />
 </androidx.constraintlayout.widget.ConstraintLayout>

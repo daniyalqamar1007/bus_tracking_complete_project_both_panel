@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
-            android:background="@color/green"
+            android:background="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -36,21 +36,17 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="70dp"
-            android:layout_height="53dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_width="100dp"
+            android:layout_height="106dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            app:srcCompat="@drawable/no_background" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="28dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
@@ -68,16 +64,15 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="371dp"
-        android:layout_height="445dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        android:layout_width="384dp"
+        android:layout_height="403dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="181dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -135,3 +130,39 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Estimated Remaining Time"
+        android:textColor="@color/green"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />

@@ -41,6 +41,7 @@
             android:gravity="center"
             android:hint="PASSWORD"
             android:inputType="textPassword"
+            android:shadowColor="#0F9CDC"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
@@ -56,6 +57,7 @@
             android:gravity="center"
             android:hint="USERNAME"
             android:inputType="textPersonName"
+            android:shadowColor="#237FA8"
             app:layout_constraintBottom_toTopOf="@+id/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
@@ -115,5 +117,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/no_background" />
 </androidx.constraintlayout.widget.ConstraintLayout>

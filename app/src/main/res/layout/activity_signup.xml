@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/top_curve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="101dp"
+            android:layout_height="109dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/no_background" />
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Get Registered"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Welcome To Sky Eye :)"
+        android:textColor="@color/green"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="166dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toEndOf="@+id/fname"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter New Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mobile Number"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lname" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginRight="264dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Enter Your Details"
+        android:textColor="@color/green"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/green_field_button"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Get Account Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/green"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repass" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Already a member?"
+        android:textColor="@color/green"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/green_field_button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Log In"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
