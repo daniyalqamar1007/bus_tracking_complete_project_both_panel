@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".booking">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/top_curve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="101dp"
+            android:layout_height="109dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/no_background" />
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="211dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Book Your Bus"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Have a Safe Journey with Sky Eye"
+        android:textColor="@color/green"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Pick Up Point"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="e.g. 2"
+        android:inputType="textPassword"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seat2"
+        app:layout_constraintTop_toBottomOf="@+id/male" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:background="@drawable/green_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Drop Point"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Estimated Fare    Rs."
+        android:textColor="@color/green"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="122dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="100.00"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginRight="264dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Enter Your Details"
+        android:textColor="@color/green"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/green_field_button"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Book Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/green"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="86dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/green_field"
+        android:text="Male"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="86dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/green_field"
+        android:text="Female"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toStartOf="@+id/male"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+
+    <RadioButton
+        android:id="@+id/couple"
+        android:layout_width="86dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/green_field"
+        android:text="Couple"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toStartOf="@+id/female"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <TextView
+        android:id="@+id/seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Seat Type"
+        android:textColor="@color/green"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/couple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <TextView
+        android:id="@+id/seat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Number of Seats Required:"
+        android:textColor="@color/green"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/pass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/couple" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".signup"></activity>
+        <activity android:name=".ride_started"></activity>
+        <activity android:name=".starting_details" />
+        <activity android:name=".new_ride_details" />
+        <activity android:name=".booking_history" />
+        <activity android:name=".dashboard_driver" />
+        <activity android:name=".cancel" />
+        <activity android:name=".booked" />
+        <activity android:name=".booking_details" />
+        <activity android:name=".booking" />
+        <activity android:name=".signup" />
         <activity android:name=".track" />
         <activity android:name=".ticket_number" />
         <activity android:name=".dashboard" />

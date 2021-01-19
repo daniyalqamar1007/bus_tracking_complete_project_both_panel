@@ -11,12 +11,14 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-light"
-        android:text="Login/Sign Up Here"
-        android:textSize="30dp"
+        android:text="Login Here"
+        android:textColor="@color/green"
+        android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.49" />
@@ -24,33 +26,35 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
-        android:layout_height="417dp"
+        android:layout_height="400dp"
         android:background="@drawable/curve"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <EditText
             android:id="@+id/password"
             android:layout_width="308dp"
-            android:layout_height="68dp"
-            android:layout_marginBottom="40dp"
+            android:layout_height="58dp"
             android:background="@drawable/user_name"
             android:ems="10"
             android:gravity="center"
             android:hint="PASSWORD"
             android:inputType="textPassword"
             android:shadowColor="#0F9CDC"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            android:textColorHint="@color/green"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="132dp" />
 
         <EditText
             android:id="@+id/username"
             android:layout_width="308dp"
-            android:layout_height="68dp"
+            android:layout_height="58dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/user_name"
             android:ems="10"
@@ -58,25 +62,52 @@
             android:hint="USERNAME"
             android:inputType="textPersonName"
             android:shadowColor="#237FA8"
+            android:textColorHint="@color/green"
             app:layout_constraintBottom_toTopOf="@+id/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
+            android:id="@+id/linearLayout9"
             android:layout_width="308dp"
-            android:layout_height="68dp"
-            android:layout_marginBottom="28dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
             android:background="@drawable/user_name"
-            android:fontFamily="sans-serif-black"
-            android:text="LOGIN NOW!!"
-            android:textColor="@color/green"
-            android:textSize="20dp"
+            android:orientation="horizontal"
+
             app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password">
+
+
+            <ImageButton
+                android:id="@+id/cancel_ride"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/user_name"
+                app:srcCompat="@drawable/cancel"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/cancel_ride_text"
+                android:layout_width="179dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/user_name"
+                android:text="Login Now"
+                android:textColor="@color/green"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/textView3"
@@ -109,13 +140,16 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="390dp"
+        android:layout_height="379dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:srcCompat="@drawable/no_background" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

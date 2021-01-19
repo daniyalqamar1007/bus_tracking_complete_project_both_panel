@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".dashboard">
+    tools:context=".dashboard_driver">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="123dp"
             android:background="@drawable/curve_box"
-            app:srcCompat="@drawable/book_ride"
+            app:srcCompat="@drawable/new_ride"
             tools:ignore="VectorDrawableCompat" />
 
         <Button
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/curve_box"
             android:fontFamily="sans-serif-medium"
-            android:text="Book Ride"
+            android:text="New Ride"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20dp" />
@@ -121,7 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="125dp"
             android:background="@drawable/curve_box"
-            app:srcCompat="@drawable/track"
+            app:srcCompat="@drawable/booking_details"
             tools:ignore="VectorDrawableCompat" />
 
         <Button
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/curve_box"
             android:fontFamily="sans-serif-medium"
-            android:text="Track Location"
+            android:text="Booking History"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18dp" />
@@ -149,21 +149,22 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/finish_ride_button"
             android:layout_width="match_parent"
             android:layout_height="124dp"
             android:background="@drawable/curve_box"
-            app:srcCompat="@drawable/ic_twotone_library_books_24"
+            app:srcCompat="@drawable/cancel"
             tools:ignore="VectorDrawableCompat" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/finish_ride_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/curve_box"
-            android:text="Booking Details"
+            android:fontFamily="sans-serif-medium"
+            android:text="Finish Ride"
             android:textColor="@color/white"
-
+            android:textSize="18dp"
             />
     </LinearLayout>
 
@@ -184,7 +185,7 @@
             android:layout_width="match_parent"
             android:layout_height="124dp"
             android:background="@drawable/curve_box"
-            app:srcCompat="@drawable/cancel"
+            app:srcCompat="@drawable/log_out"
             tools:ignore="VectorDrawableCompat" />
 
         <Button
@@ -193,7 +194,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/curve_box"
             android:fontFamily="sans-serif-medium"
-            android:text="Cancel Ride"
+            android:text="Log out"
             android:textColor="@color/white"
             android:textSize="18dp" />
     </LinearLayout>
@@ -202,17 +203,13 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
         android:fontFamily="sans-serif-medium"
         android:text="Welcome to Sky Eye"
         android:textColor="@color/green"
         android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="139dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
