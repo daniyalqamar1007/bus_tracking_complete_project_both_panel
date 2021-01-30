@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".booked">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/top_curve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="101dp"
+            android:layout_height="109dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/no_background" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Tracking Code"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="0.622"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.384" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Track Code"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="142dp" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Timings"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="2245"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="10:00"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="11:00"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="12:00"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="01:00"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="1007"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="1244"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_field_button"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="6969"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="53dp"
+        android:layout_height="41dp"
+        app:srcCompat="@drawable/bus"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/check"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/check"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/check"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/check"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
